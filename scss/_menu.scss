@@ -12,8 +12,8 @@
     position: absolute;
     right: 0;
     top: 0.5rem;
-    width: 28px;
-    height: 3px;
+    width: 38px;
+    height: 4px;
     background: set-text-color($primary-color);
     @include transition-ease;
 
@@ -21,9 +21,9 @@
       // creating nav button right top
       content: "";
       position: absolute;
-      top: -8px;
-      width: 28px;
-      height: 3px;
+      top: -9px;
+      width: 38px;
+      height: 4px;
       background: set-text-color($primary-color);
       @include transition-ease;
     }
@@ -31,9 +31,9 @@
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
-      width: 20px;
-      height: 3px;
+      top: 9px;
+      width: 38px;
+      height: 4px;
       background: set-text-color($primary-color);
       @include transition-ease;
     }
@@ -44,10 +44,13 @@
 
       &::before {
         transform: rotate(45deg) translate(5px, 8px);
+        height: 9px;
+        background: red;
       }
       &::after {
-        width: 28px;
         transform: rotate(-45deg) translate(3px, -7px);
+        background: red;
+        height: 9px;
       }
     }
   }
